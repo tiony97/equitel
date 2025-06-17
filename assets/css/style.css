@@ -691,4 +691,70 @@ footer .footer-link:hover {
   height: auto;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+#news .container h2 {
+  color: var(--secondary-accent-color);
+}
+#news .container .news-grid .item {
+  width: 100%;
+  height: 320px;
+  display: flex;
+  align-items: flex-end;
+  padding: 0.6em;
+  position: relative;
+  border: 1px solid rgba(168, 77, 15, 0.4);
+  border-radius: 30px;
+}
+#news .container .news-grid .item .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.313);
+  z-index: 1;
+  border-radius: 30px !important;
+}
+#news .container .news-grid .item .item-bg {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  border-radius: 30px;
+}
+#news .container .news-grid .item .content {
+  z-index: 4;
+}
+#news .container .news-grid .item .content * {
+  z-index: 4;
+}
+#news .container .news-grid .item .content h4,
+#news .container .news-grid .item .content p {
+  color: var(--background-color);
+}
+#news .container .news-grid .item .content .news-btn {
+  background-color: var(--primary-accent-color);
+  border: 1px solid var(--primary-accent-color);
+  transition: all 0.3s ease-in-out;
+}
+#news .container .news-grid .item .content .news-btn:hover {
+  background-color: var(--secondary-accent-color);
+  border: 1px solid var(--primary-accent-color);
+}
+#news .container .more-news-btn {
+  position: relative;
+  width: -moz-fit-content !important;
+  width: fit-content !important;
+  background-color: var(--primary-accent-color);
+  border: 1px solid var(--primary-accent-color);
+  transition: all 0.3s ease-in-out;
+}
+#news .container .more-news-btn:hover {
+  background-color: var(--secondary-accent-color);
+  border: 1px solid var(--primary-accent-color);
 }/*# sourceMappingURL=style.css.map */

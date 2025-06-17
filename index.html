@@ -807,8 +807,13 @@
       <section id="news" class="py-12">
         <div class="container">
           <h2>Blogs & News</h2>
-          <div class="news-grid grid grid-cols-1">
+
+          <!--News posts grid-->
+          <div
+            class="news-grid grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-5 lg:gap-8 mt-8"
+          >
             <div class="item">
+              <div class="overlay"></div>
               <img
                 src="./assets/images/news 1.png"
                 alt="news-image"
@@ -821,9 +826,61 @@
                   download, and upload.
                 </p>
                 <button
-                  class="news-btn w-fit h-fit px-4 py-2 flex items-center text-white rounded-3xl mx-auto mt-6"
+                  class="news-btn w-fit h-fit px-4 py-2 flex items-center text-white rounded-3xl mt-6"
                 >
-                  Equity Self Service
+                  Read More
+                  <img
+                    src="./assets/images/solar_arrow-left-broken-light.png"
+                    alt=""
+                    class="arrow object-contain ml-2 w-4 h-4"
+                  />
+                </button>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="overlay"></div>
+              <img
+                src="./assets/images/news 1.png"
+                alt="news-image"
+                class="item-bg absolute top-0 left-0 w-full h-full object-cover object-center z-0"
+              />
+              <div class="content">
+                <h4>KQ Tickets</h4>
+                <p>
+                  Now you can pay for your KQ tickets right on your phone using
+                  your Equitel line.
+                </p>
+                <button
+                  class="news-btn w-fit h-fit px-4 py-2 flex items-center text-white rounded-3xl mt-6"
+                >
+                  Read More
+                  <img
+                    src="./assets/images/solar_arrow-left-broken-light.png"
+                    alt=""
+                    class="arrow object-contain ml-2 w-4 h-4"
+                  />
+                </button>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="overlay"></div>
+              <img
+                src="./assets/images/news 1.png"
+                alt="news-image"
+                class="item-bg absolute top-0 left-0 w-full h-full object-cover object-center z-0"
+              />
+              <div class="content">
+                <h4>Equitel Multiple Approval Services</h4>
+                <p>
+                  Authorize your chama account transaction conveniently using
+                  your Equitel line.
+                </p>
+                <button
+                  class="news-btn w-fit h-fit px-4 py-2 flex items-center text-white rounded-3xl mt-6"
+                >
+                  Read More
                   <img
                     src="./assets/images/solar_arrow-left-broken-light.png"
                     alt=""
@@ -833,6 +890,19 @@
               </div>
             </div>
           </div>
+
+          <!--More Button-->
+          <a
+            href="#"
+            class="more-news-btn w-fit h-fit px-4 py-2 flex items-center text-white rounded-3xl mx-auto mt-12"
+          >
+            View More
+            <img
+              src="./assets/images/solar_arrow-left-broken-light.png"
+              alt=""
+              class="arrow object-contain ml-2 w-4 h-4"
+            />
+          </a>
         </div>
       </section>
     </main>
