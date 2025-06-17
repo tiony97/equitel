@@ -629,4 +629,66 @@ footer .footer-link:hover {
 }
 #do-more .container .do-more-items-reverse {
   grid-template-columns: 2.5fr 1fr;
+}
+
+#self-service {
+  background-color: var(--secondary-accent-color);
+  height: -moz-fit-content;
+  height: fit-content;
+}
+#self-service .bg {
+  z-index: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0.1;
+}
+#self-service .container {
+  z-index: 3;
+}
+#self-service .container * {
+  z-index: 3;
+}
+#self-service .container .dual-images {
+  width: 300px;
+  height: 200px;
+}
+#self-service .container .dual-images .dual-1 {
+  position: absolute;
+  width: 190px;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  border-radius: 30px;
+}
+#self-service .container .dual-images .dual-2 {
+  position: absolute;
+  width: 140px;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  top: 50%;
+  right: 0;
+  z-index: 3;
+  border-radius: 10px;
+}
+#self-service .container .content {
+  width: 50%;
+}
+#self-service .container .content .self-btn {
+  background-color: var(--primary-accent-color);
+  border: 1px solid var(--primary-accent-color);
+  transition: all 0.3s ease-in-out;
+}
+#self-service .container .content .self-btn:hover {
+  background-color: var(--secondary-accent-color);
+  border: 1px solid var(--primary-accent-color);
+}
+#self-service .container .vector {
+  width: 250px;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
 }/*# sourceMappingURL=style.css.map */
