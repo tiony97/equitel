@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/css/tailwind.css" />
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/css/fancybox.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/afya_img.png"
+      type="image/x-icon"
+    />
+    <title>Equitel</title>
+  </head>
+
+  <body>
+    <!--Body Overlay-->
+    <div class="body-overlay absolute top-0 left-0 w-full h-full"></div>
+
+    <!--Header Section-->
+    <header>
+      <div class="container flex items-center justify-between">
+        <!--Logo-->
+        <a href="/" class="logo"
+          ><img src="./assets/images/equitel_logo.png" alt="equity_logo"
+        /></a>
+
+        <!--Navigation Menu-->
+        <div class="main-menu lg:-ml-40 md:-ml-40">
+          <ul class="menu-links relative flex items-center list-none">
+            <li class="menu-link uppercase">
+              <a href="./services.html">Home</a>
+            </li>
+
+            <li class="menu-link menu-item-has-children uppercase">
+              <a href="javascript:void(0)">MY Life</a>
+              <ul class="sub-menu">
+                <li class="menu-link">
+                  <a href="./locations.html">my life 1</a>
+                </li>
+                <li class="menu-link">
+                  <a href="./locations.html">my life 2</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="menu-link menu-item-has-children uppercase">
+              <a href="javascript:void(0)">MY phone</a>
+              <ul class="sub-menu">
+                <li class="menu-link">
+                  <a href="./locations.html">my phone 1</a>
+                </li>
+                <li class="menu-link">
+                  <a href="./locations.html">my phone 2</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="menu-link menu-item-has-children uppercase">
+              <a href="javascript:void(0)">My money</a>
+              <ul class="sub-menu">
+                <li class="menu-link">
+                  <a href="./my-money.html">My Money</a>
+                </li>
+                <li class="menu-link">
+                  <a href="./send-money.html">Send Money</a>
+                </li>
+                <li class="menu-link">
+                  <a href="./pay-with-equity.html">Pay With Equity</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="menu-link menu-item-has-children uppercase">
+              <a href="javascript:void(0)">Media center</a>
+              <ul class="sub-menu">
+                <li class="menu-link">
+                  <a href="./news.html">Media center 1</a>
+                </li>
+                <li class="menu-link">
+                  <a href="./careers.html">Media center 1</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <!--Header Links-->
+        <div class="header-links flex items-center">
+          <!--Mobile Menu Toggler-->
+          <span id="menu-open" class="flex items-center space-x-3">
+            <p class="text-base font-medium capitalize">Menu</p>
+            <img
+              src="./assets/images/eva_menu-2-outline.png"
+              alt="menu-open"
+              class="h-auto w-auto object-contain"
+            />
+          </span>
+        </div>
+      </div>
+    </header>
+
+    <!--Mobile Menu-->
+    <div class="mobile-menu">
+      <div class="container flex flex-col items-start justify-start">
+        <!--Menu Close Btn-->
+        <button id="menu-close" class="mb-4 w-fit h-fit ml-auto">
+          <img
+            src="./assets/images/menu_close.png"
+            alt="menu-close"
+            class="w-auto h-auto object-contain"
+          />
+        </button>
+
+        <!--Mobile Menu Links-->
+        <ul class="menu-links relative list-none mb-4">
+          <li class="menu-link flex items-center space-x-2">
+            <img
+              src="./assets/images/solar_arrow-left-broken.png"
+              alt="arrow-left"
+              class="arrow w-auto h-auto object-contain"
+            /><a href="./about.html">About Us</a>
+          </li>
+
+          <li class="menu-link flex items-center space-x-2">
+            <img
+              src="./assets/images/solar_arrow-left-broken.png"
+              alt="arrow-left"
+              class="arrow w-auto h-auto object-contain"
+            /><a href="">Equitel Blogs</a>
+          </li>
+
+          <li class="menu-link flex items-center space-x-2">
+            <img
+              src="./assets/images/solar_arrow-left-broken.png"
+              alt="arrow-left"
+              class="arrow w-auto h-auto object-contain"
+            /><a href="">FAQs</a>
+          </li>
+
+          <li class="menu-link flex items-center space-x-2">
+            <img
+              src="./assets/images/solar_arrow-left-broken.png"
+              alt="arrow-left"
+              class="arrow w-auto h-auto object-contain"
+            /><a href="">Contact Us</a>
+          </li>
+
+          <li class="menu-link flex items-center space-x-2">
+            <img
+              src="./assets/images/solar_arrow-left-broken.png"
+              alt="arrow-left"
+              class="arrow w-auto h-auto object-contain"
+            /><a href="">Self Care</a>
+          </li>
+
+          <li class="menu-link flex items-center space-x-2">
+            <img
+              src="./assets/images/solar_arrow-left-broken.png"
+              alt="arrow-left"
+              class="arrow w-auto h-auto object-contain"
+            /><a href="">Whistleblowing</a>
+          </li>
+        </ul>
+
+        <!--Equity Group Link-->
+        <a
+          href="/"
+          class="group-btn w-fit h-fit px-4 py-2 rounded-3xl text-base font-normal text-white flex items-center mt-6"
+        >
+          Equity Group
+          <img
+            src="./assets/images/solar_arrow-left-broken-light.png"
+            alt=""
+            class="arrow object-contain ml-2"
+        /></a>
+      </div>
+    </div>
+
+    <!--Page Content-->
+    <main>
+      <!--Common Banner-->
+      <section id="common-banner">
+        <div class="container">
+          <div class="content">
+            <h1>My Money</h1>
+            <p class="my-5">
+              Manage your money and banking services with incredible ease
+              directly from your mobile phone. Access the following services:
+              Send and receive money Get instant loans Get Insurance Withdraw
+              cash Save, pay for bills Goods & services and much more.
+            </p>
+          </div>
+
+          <!--Image section-->
+          <div class="image-container relative">
+            <!--Ellipse-->
+            <img
+              src="./assets/images/banner_ellipse.png"
+              alt="ellipse"
+              class="ellipse"
+            />
+            <!--Banner Image-->
+            <img
+              src="./assets/images/my money banner.png"
+              alt="Healthcare professional"
+              class="main-image"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!--CTAs-->
+      <section id="my-money-ctas" class="py-12">
+        <div class="container">
+          <div class="cta-row mb-6">
+            <div class="image-card relative">
+              <img
+                src="./assets/images/cta image 1.jpg"
+                alt="cta image"
+                class="absolute top-0 left-0 w-full h-full object-cover object-top"
+              />
+            </div>
+            <div
+              class="content-card relative flex items-center h-full p-4"
+              style="background-color: var(--primary-accent-color)"
+            >
+              <img
+                src="./assets/images/white pattern.png"
+                alt="white-pattern"
+                class="absolute top-0 left-0 w-full h-full object-cover opacity-25"
+              />
+              <div class="wrapper">
+                <h2>Send Money</h2>
+                <p>
+                  Equitel is a secure and convenient platform that allows you to
+                  access your bank account to send money pretty much anywhere.
+                </p>
+
+                <a
+                  href="#"
+                  class="cta-btn w-fit h-fit px-4 py-2 rounded-3xl text-base font-normal flex items-center mt-6"
+                >
+                  Learn More
+                  <img
+                    src="./assets/images/solar_arrow-left-broken.png"
+                    alt=""
+                    class="arrow object-contain ml-2"
+                /></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="cta-row-reverse mb-6">
+            <div class="image-card relative">
+              <img
+                src="./assets/images/cta image 2.png"
+                alt="cta image"
+                class="absolute top-0 left-0 w-full h-full object-cover"
+              />
+            </div>
+            <div
+              class="content-card relative flex items-center h-full p-4"
+              style="background-color: var(--secondary-accent-color)"
+            >
+              <img
+                src="./assets/images/white pattern.png"
+                alt="white-pattern"
+                class="absolute top-0 left-0 w-full h-full object-cover opacity-25"
+              />
+              <div class="wrapper">
+                <h2>Riziki Cover</h2>
+                <p>
+                  Equitel subscribers now have access to a mobile-based
+                  insurance product, called Riziki Cover that eases the
+                  financial burden associated with lost daily income from one’s
+                  employment or personal business in case of hospital admission.
+                </p>
+
+                <a
+                  href="#"
+                  class="cta-btn w-fit h-fit px-4 py-2 rounded-3xl text-base font-normal flex items-center mt-6"
+                >
+                  Learn More
+                  <img
+                    src="./assets/images/solar_arrow-left-broken.png"
+                    alt=""
+                    class="arrow object-contain ml-2"
+                /></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="cta-row mb-6">
+            <div class="image-card relative">
+              <img
+                src="./assets/images/cta image 3.png"
+                alt="cta image"
+                class="absolute top-0 left-0 w-full h-full object-cover"
+              />
+            </div>
+            <div
+              class="content-card relative flex items-center h-full p-4"
+              style="background-color: var(--foreground-color)"
+            >
+              <img
+                src="./assets/images/white pattern.png"
+                alt="white-pattern"
+                class="absolute top-0 left-0 w-full h-full object-cover opacity-25"
+              />
+              <div class="wrapper">
+                <h2>Buy Airtime</h2>
+                <p>There are various ways you can access Equitel airtime:</p>
+
+                <a
+                  href="#"
+                  class="cta-btn w-fit h-fit px-4 py-2 rounded-3xl text-base font-normal flex items-center mt-6"
+                >
+                  Learn More
+                  <img
+                    src="./assets/images/solar_arrow-left-broken.png"
+                    alt=""
+                    class="arrow object-contain ml-2"
+                /></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="cta-row-reverse mb-6">
+            <div class="image-card relative">
+              <img
+                src="./assets/images/cta image 4.png"
+                alt="cta image"
+                class="absolute top-0 left-0 w-full h-full object-cover"
+              />
+            </div>
+            <div
+              class="content-card relative flex items-center h-full p-4"
+              style="background-color: var(--primary-accent-color)"
+            >
+              <img
+                src="./assets/images/white pattern.png"
+                alt="white-pattern"
+                class="absolute top-0 left-0 w-full h-full object-cover opacity-25"
+              />
+              <div class="wrapper">
+                <h2>Eazzy Loan</h2>
+                <p>
+                  Get an Eazzy loan of up to KES 3 million instantly on your
+                  phone. No forms. No Guarantors.
+                </p>
+
+                <a
+                  href="#"
+                  class="cta-btn w-fit h-fit px-4 py-2 rounded-3xl text-base font-normal flex items-center mt-6"
+                >
+                  Learn More
+                  <img
+                    src="./assets/images/solar_arrow-left-broken.png"
+                    alt=""
+                    class="arrow object-contain ml-2"
+                /></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="cta-row mb-6">
+            <div class="image-card relative">
+              <img
+                src="./assets/images/cta image 5.jpg"
+                alt="cta image"
+                class="absolute top-0 left-0 w-full h-full object-cover"
+              />
+            </div>
+            <div
+              class="content-card relative flex items-center h-full p-4"
+              style="background-color: var(--secondary-accent-color)"
+            >
+              <img
+                src="./assets/images/white pattern.png"
+                alt="white-pattern"
+                class="absolute top-0 left-0 w-full h-full object-cover opacity-25"
+              />
+              <div class="wrapper">
+                <h2>My Goals</h2>
+                <p>
+                  Save for specific goals using your Equitel line through “My
+                  Goals” feature.
+                </p>
+
+                <a
+                  href="#"
+                  class="cta-btn w-fit h-fit px-4 py-2 rounded-3xl text-base font-normal flex items-center mt-6"
+                >
+                  Learn More
+                  <img
+                    src="./assets/images/solar_arrow-left-broken.png"
+                    alt=""
+                    class="arrow object-contain ml-2"
+                /></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="cta-row-reverse mb-6">
+            <div class="image-card relative">
+              <img
+                src="./assets/images/cta image 6.jpg"
+                alt="cta image"
+                class="absolute top-0 left-0 w-full h-full object-cover"
+              />
+            </div>
+            <div
+              class="content-card relative flex items-center h-full p-4"
+              style="background-color: var(--foreground-color)"
+            >
+              <img
+                src="./assets/images/white pattern.png"
+                alt="white-pattern"
+                class="absolute top-0 left-0 w-full h-full object-cover opacity-25"
+              />
+              <div class="wrapper">
+                <h2>Multiple Approval Service</h2>
+                <p>
+                  This service allows Equitel subscribers who are officials
+                  operating a ‘chama’ account on behalf of their members
+                </p>
+
+                <a
+                  href="#"
+                  class="cta-btn w-fit h-fit px-4 py-2 rounded-3xl text-base font-normal flex items-center mt-6"
+                >
+                  Learn More
+                  <img
+                    src="./assets/images/solar_arrow-left-broken.png"
+                    alt=""
+                    class="arrow object-contain ml-2"
+                /></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="cta-row mb-6">
+            <div class="image-card relative">
+              <img
+                src="./assets/images/cta image 7.jpg"
+                alt="cta image"
+                class="absolute top-0 left-0 w-full h-full object-cover"
+              />
+            </div>
+            <div
+              class="content-card relative flex items-center h-full p-4"
+              style="background-color: var(--primary-accent-color)"
+            >
+              <img
+                src="./assets/images/white pattern.png"
+                alt="white-pattern"
+                class="absolute top-0 left-0 w-full h-full object-cover opacity-25"
+              />
+              <div class="wrapper">
+                <h2>Juba Express</h2>
+                <p>
+                  This service allows anyone wishing to send money to Kenya from
+                  UAE (United Arab Emirates) to do so via the recipient’s
+                  Equitel line.
+                </p>
+
+                <a
+                  href="#"
+                  class="cta-btn w-fit h-fit px-4 py-2 rounded-3xl text-base font-normal flex items-center mt-6"
+                >
+                  Learn More
+                  <img
+                    src="./assets/images/solar_arrow-left-broken.png"
+                    alt=""
+                    class="arrow object-contain ml-2"
+                /></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="cta-row-reverse mb-6">
+            <div class="image-card relative">
+              <img
+                src="./assets/images/cta image 8.jpg"
+                alt="cta image"
+                class="absolute top-0 left-0 w-full h-full object-cover"
+              />
+            </div>
+            <div
+              class="content-card relative flex items-center h-full p-4"
+              style="background-color: var(--secondary-accent-color)"
+            >
+              <img
+                src="./assets/images/white pattern.png"
+                alt="white-pattern"
+                class="absolute top-0 left-0 w-full h-full object-cover opacity-25"
+              />
+              <div class="wrapper">
+                <h2>KQ Tickets</h2>
+                <p>
+                  Pay for your KQ tickets from the comfort of you phone using
+                  your equitel line.
+                </p>
+
+                <a
+                  href="#"
+                  class="cta-btn w-fit h-fit px-4 py-2 rounded-3xl text-base font-normal flex items-center mt-6"
+                >
+                  Learn More
+                  <img
+                    src="./assets/images/solar_arrow-left-broken.png"
+                    alt=""
+                    class="arrow object-contain ml-2"
+                /></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="cta-row mb-6">
+            <div class="image-card relative">
+              <img
+                src="./assets/images/cta image 9.png"
+                alt="cta image"
+                class="absolute top-0 left-0 w-full h-full object-cover"
+              />
+            </div>
+            <div
+              class="content-card relative flex items-center h-full p-4"
+              style="background-color: var(--foreground-color)"
+            >
+              <img
+                src="./assets/images/white pattern.png"
+                alt="white-pattern"
+                class="absolute top-0 left-0 w-full h-full object-cover opacity-25"
+              />
+              <div class="wrapper">
+                <h2>Pay with Equity</h2>
+                <p>
+                  PWE enables mobile subscribers to pay for goods and services
+                  easily and conveniently to one merchant Till Number for free.
+                </p>
+
+                <a
+                  href="#"
+                  class="cta-btn w-fit h-fit px-4 py-2 rounded-3xl text-base font-normal flex items-center mt-6"
+                >
+                  Learn More
+                  <img
+                    src="./assets/images/solar_arrow-left-broken.png"
+                    alt=""
+                    class="arrow object-contain ml-2"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--Footer-->
+    <footer id="footer" class="text-white pt-10">
+      <div class="container">
+        <div class="text-center mb-10">
+          <h2 class="text-3xl font-bold italic">Get Activated Today</h2>
+          <p class="mt-2 w-full lg:w-2/5 md:w-3/5 mx-auto">
+            Join Equitel today by visiting your nearest Equity Bank branch or
+            any Equity Agent to pick up your SIM card.
+          </p>
+          <button
+            class="footer-btn w-fit h-fit px-4 py-2 flex items-center text-white rounded-3xl mx-auto mt-6"
+          >
+            Get Activated!
+            <img
+              src="./assets/images/solar_arrow-left-broken-light.png"
+              alt=""
+              class="arrow object-contain ml-2 w-4 h-4"
+            />
+          </button>
+        </div>
+
+        <div
+          class="pt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8"
+          style="border-top: 1px solid #ffffff33"
+        >
+          <!-- Reach Us -->
+          <div>
+            <h3 class="font-bold mb-3 italic">Reach Us</h3>
+            <ul class="space-y-2">
+              <li>
+                <img
+                  src="./assets/images/icon-park-outline_accept-email.png"
+                  alt="icon"
+                  class="w-5 h-5 object-contain inline-block mr-2"
+                />
+                info@equitel.com
+              </li>
+              <li>
+                <img
+                  src="./assets/images/bi_phone-flip.png"
+                  alt="icon"
+                  class="w-5 h-5 object-contain inline-block mr-2"
+                />
+                +254 763 000 000
+              </li>
+              <li class="flex items-center">
+                <img
+                  src="./assets/images/mingcute_map-pin-line.png"
+                  alt="icon"
+                  class="w-5 h-5 object-contain inline-block mr-2"
+                />
+                Equity Center, 8th floor<br />Finserve Africa Limited
+              </li>
+            </ul>
+            <div class="flex space-x-1 mt-4">
+              <a href="#" class="w-fit h-fit"
+                ><img
+                  src="./assets/images/fb.png"
+                  alt="icon"
+                  class="w-5 h-5 object-contain inline-block mr-2"
+              /></a>
+              <a href="#" class="w-fit h-fit"
+                ><img
+                  src="./assets/images/x.png"
+                  alt="icon"
+                  class="w-5 h-5 object-contain inline-block mr-2"
+              /></a>
+              <a href="#" class="w-fit h-fit"
+                ><img
+                  src="./assets/images/yt.png"
+                  alt="icon"
+                  class="w-5 h-5 object-contain inline-block mr-2"
+              /></a>
+              <a href="#" class="w-fit h-fit"
+                ><img
+                  src="./assets/images/ln.png"
+                  alt="icon"
+                  class="w-5 h-5 object-contain inline-block mr-2"
+              /></a>
+            </div>
+          </div>
+
+          <!-- Smart Tools -->
+          <div>
+            <h3 class="font-bold mb-3 italic">Smart Tools</h3>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="footer-link">
+                  <img
+                    src="./assets/images/solar_arrow-left-broken-light.png"
+                    alt="arrow-left"
+                    class="arrow object-contain inline-block mr-2 w-4 h-4"
+                  />
+                  Pay with Equity</a
+                >
+              </li>
+              <li>
+                <a href="#" class="footer-link">
+                  <img
+                    src="./assets/images/solar_arrow-left-broken-light.png"
+                    alt="arrow-left"
+                    class="arrow object-contain inline-block mr-2 w-4 h-4"
+                  />
+                  Pesa Link</a
+                >
+              </li>
+              <li>
+                <a href="#" class="footer-link">
+                  <img
+                    src="./assets/images/solar_arrow-left-broken-light.png"
+                    alt="arrow-left"
+                    class="arrow object-contain inline-block mr-2 w-4 h-4"
+                  />
+                  FAQs</a
+                >
+              </li>
+              <li>
+                <a href="#" class="footer-link">
+                  <img
+                    src="./assets/images/solar_arrow-left-broken-light.png"
+                    alt="arrow-left"
+                    class="arrow object-contain inline-block mr-2 w-4 h-4"
+                  />
+                  Equitel 4G FAQs</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Support & Downloads -->
+          <div>
+            <h3 class="font-bold mb-3 italic">Support & Downloads</h3>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="footer-link">
+                  <img
+                    src="./assets/images/solar_arrow-left-broken-light.png"
+                    alt="arrow-left"
+                    class="arrow object-contain inline-block mr-2 w-4 h-4"
+                  />
+                  Internet Settings</a
+                >
+              </li>
+              <li>
+                <a href="#" class="footer-link">
+                  <img
+                    src="./assets/images/solar_arrow-left-broken-light.png"
+                    alt="arrow-left"
+                    class="arrow object-contain inline-block mr-2 w-4 h-4"
+                  />
+                  Jikolee Kredo</a
+                >
+              </li>
+              <li>
+                <a href="#" class="footer-link">
+                  <img
+                    src="./assets/images/solar_arrow-left-broken-light.png"
+                    alt="arrow-left"
+                    class="arrow object-contain inline-block mr-2 w-4 h-4"
+                  />
+                  Roaming Abroad</a
+                >
+              </li>
+              <li>
+                <a href="#" class="footer-link">
+                  <img
+                    src="./assets/images/solar_arrow-left-broken-light.png"
+                    alt="arrow-left"
+                    class="arrow object-contain inline-block mr-2 w-4 h-4"
+                  />
+                  Secure Banking Tips</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Download App -->
+          <div>
+            <h3 class="font-bold mb-3 italic">Download Equity Mobile App</h3>
+            <img
+              src="./assets/images/app download options.png"
+              alt="app-download-options"
+              class="w-auto h-24 object-fill"
+            />
+          </div>
+        </div>
+
+        <div
+          class="text-center text-xs mt-10 py-4 flex justify-between items-center"
+          style="border-top: 1px solid #ffffff33"
+        >
+          <p class="flex items-center text-sm">
+            <img
+              src="./assets/images/solar_copyright-broken.png"
+              alt="Copyright"
+              class="w-5 h-5 object-contain mr-1"
+            />
+            Copyright 2025 Equitel. All rights reserved
+          </p>
+          <a href="#" class="text-sm hover:underline">Terms and Conditions</a>
+        </div>
+      </div>
+    </footer>
+
+    <!--Js Files-->
+    <script src="./assets/js/all.min.js"></script>
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+    <script src="./assets/js/fancybox.umd.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

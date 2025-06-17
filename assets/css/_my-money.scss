@@ -1,0 +1,45 @@
+/* MY MONEY PAGE STYLES */
+#my-money-ctas {
+  .container {
+    .cta-row,
+    .cta-row-reverse {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .image-card {
+        width: 60%;
+        height: 250px;
+        border-radius: 30px;
+        img {
+          border-radius: 30px;
+          object-fit: cover;
+        }
+      }
+      .content-card {
+        width: 38%;
+        height: 250px;
+        border-radius: 30px;
+        h2,
+        p {
+          color: var(--background-color);
+        }
+        .cta-btn {
+          position: relative;
+          width: fit-content !important;
+          background-color: var(--background-color);
+          border: 1px solid var(--background-color);
+          color: var(--primary-accent-color);
+          transition: all 0.3s ease-in-out;
+          font-weight: 600;
+          &:hover {
+            scale: 0.95;
+          }
+        }
+      }
+    }
+
+    .cta-row-reverse {
+      flex-direction: row-reverse;
+    }
+  }
+}
