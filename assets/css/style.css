@@ -313,8 +313,31 @@ header .container .header-links #menu-open:hover p {
   grid-template-columns: 1fr 1.5fr;
   align-items: center;
 }
+#common-banner .container .content .tagline {
+  margin-bottom: 0.5em;
+}
+#common-banner .container .content .tagline .left,
+#common-banner .container .content .tagline .right {
+  width: 43px;
+  height: 3px;
+}
+#common-banner .container .content .tagline .right {
+  background-color: var(--primary-accent-color);
+}
+#common-banner .container .content .tagline .left {
+  background-color: var(--secondary-accent-color);
+}
+#common-banner .container .content .tagline p {
+  font-size: 15px;
+  text-transform: capitalize;
+  font-weight: 500;
+  color: var(--foreground-color);
+}
 #common-banner .container .content h1 {
   color: var(--secondary-accent-color);
+}
+#common-banner .container .content h1 span {
+  color: var(--primary-accent-color);
 }
 #common-banner .container .image-container {
   position: relative;

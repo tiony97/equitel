@@ -329,8 +329,31 @@ header {
     grid-template-columns: 1fr 1.5fr;
     align-items: center;
     .content {
+      .tagline {
+        .left,
+        .right {
+          width: 43px;
+          height: 3px;
+        }
+        .right {
+          background-color: var(--primary-accent-color);
+        }
+        .left {
+          background-color: var(--secondary-accent-color);
+        }
+        p {
+          font-size: 15px;
+          text-transform: capitalize;
+          font-weight: 500;
+          color: var(--foreground-color);
+        }
+        margin-bottom: 0.5em;
+      }
       h1 {
         color: var(--secondary-accent-color);
+        span {
+          color: var(--primary-accent-color);
+        }
       }
     }
     .image-container {
