@@ -382,6 +382,7 @@ header {
     }
   }
 }
+
 //Footer
 footer {
   background-color: var(--secondary-accent-color);
@@ -856,3 +857,4 @@ footer {
 
 /* Imports */
 @import "./my-money";
+@import "./send-money";

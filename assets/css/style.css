@@ -873,4 +873,11 @@ footer .footer-link:hover {
 }
 #my-money-ctas .container .cta-row-reverse {
   flex-direction: row-reverse;
+}
+
+/* SEND MONEY STYLES */
+#intro .container .note .line {
+  width: 2px;
+  height: 100px;
+  background-color: rgba(168, 77, 15, 0.4);
 }/*# sourceMappingURL=style.css.map */
