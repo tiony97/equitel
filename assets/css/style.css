@@ -880,4 +880,123 @@ footer .footer-link:hover {
   width: 2px;
   height: 100px;
   background-color: rgba(168, 77, 15, 0.4);
-}/*# sourceMappingURL=style.css.map */
+}
+
+/* PAY WITH EQUITY PAGE STYLES */
+#pay-tabs .tabbed-section .tab-header {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+#pay-tabs .tabbed-section .tab-header .tab-link {
+  cursor: pointer;
+  color: #d8b7a0;
+  font-style: italic;
+  transition: color 0.3s ease;
+}
+#pay-tabs .tabbed-section .tab-header .tab-link.active {
+  color: #ec6707;
+}
+#pay-tabs .tabbed-section .tab-header .tab-link:hover {
+  color: var(--secondary-accent-color);
+}
+#pay-tabs .tabbed-section .tab-header .divider {
+  margin: 0 0.5rem;
+  color: #888;
+}
+#pay-tabs .tabbed-section .tab-content {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+#pay-tabs .tabbed-section .tab-content.active {
+  display: block;
+  opacity: 1;
+}
+#pay-tabs .tabbed-section .tab-content .content {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+#pay-tabs .tabbed-section .tab-content .content .text {
+  flex: 1;
+}
+#pay-tabs .tabbed-section .tab-content .content .text ul {
+  list-style: none;
+}
+#pay-tabs .tabbed-section .tab-content .content .text ul li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 0.4em;
+}
+#pay-tabs .tabbed-section .tab-content .content .text ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 6px;
+  width: 16px;
+  height: 16px;
+  background-image: url("../images/solar_arrow-left-broken.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#pay-tabs .tabbed-section .tab-content .content .image {
+  flex: 1;
+}
+#pay-tabs .tabbed-section .tab-content .content .image img {
+  width: 100%;
+  height: 450px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 8px;
+}
+
+/* BUY AIRTIME STYLES */
+#buy-airtime-intro .ways .way {
+  border-radius: 20px;
+  padding: 1.1em;
+  padding-top: 1.5em;
+  height: -moz-fit-content;
+  height: fit-content;
+  min-height: 250px;
+}
+#buy-airtime-intro .ways .way .way-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
+  border-radius: 20px;
+}
+#buy-airtime-intro .ways .way .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  z-index: 2;
+  border-radius: 20px;
+}
+#buy-airtime-intro .ways .way .content {
+  z-index: 4;
+  background-color: var(--secondary-accent-color);
+  color: var(--background-color);
+  border-radius: 10px;
+  padding: 10px;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 62%;
+}
+#buy-airtime-intro .ways .way .content p span {
+  color: var(--primary-accent-color);
+}
+#buy-airtime-intro .ways .way:nth-of-type(2) .content, #buy-airtime-intro .ways .way:nth-of-type(3) .content {
+  background-color: var(--primary-accent-color);
+}
+
+/* KQ TICKETS STYLES *//*# sourceMappingURL=style.css.map */

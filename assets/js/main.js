@@ -54,3 +54,21 @@ $(document).ready(function () {
     effect: "slide",
   });
 });
+
+/* Pay with equity tabs */
+$(function () {
+  $("#pay-tabs .tab-link").on("click", function () {
+    const tabId = $(this).data("tab");
+
+    // Change active tab text styling
+    $("#pay-tabs .tab-link").removeClass("active");
+    $(this).addClass("active");
+
+    // Smooth transition between contents
+    $("#pay-tabs .tab-content.active").fadeOut(200, function () {
+      $(this).removeClass("active");
+      const newContent = $("#" + tabId);
+      newContent.fadeIn(300).addClass("active");
+    });
+  });
+});
