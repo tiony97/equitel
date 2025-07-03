@@ -999,4 +999,212 @@ footer .footer-link:hover {
   background-color: var(--primary-accent-color);
 }
 
-/* KQ TICKETS STYLES *//*# sourceMappingURL=style.css.map */
+/* KQ TICKETS STYLES */
+#kq-intro .container .final {
+  background-color: var(--primary-accent-color);
+  width: 200px;
+  height: 120px;
+  padding: 1.5em 1em;
+  border-radius: 20px;
+}
+
+/* EAZZY LOAN CSS STYLES */
+#loans .loan-actions {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+#loans .loan-actions .btn {
+  padding: 0.4rem 1.2rem;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+}
+#loans .loan-actions .btn.primary {
+  background-color: var(--primary-accent-color);
+  color: white;
+}
+#loans .loan-actions .btn.outline {
+  border: 2px solid var(--primary-accent-color);
+  color: var(--primary-accent-color);
+  background: transparent;
+}
+#loans .loan-steps {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+}
+#loans .loan-steps .list {
+  width: 50%;
+}
+#loans .loan-steps .loan-image {
+  width: 45%;
+  height: auto;
+  max-height: 210px;
+  border-radius: 12px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#boostika .boostika-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 2em;
+}
+#boostika .boostika-content .boostika-box {
+  background-color: var(--secondary-accent-color);
+  color: white;
+  padding: 1rem;
+  border-radius: 1rem;
+  width: 100%;
+  max-height: 280px;
+}
+#boostika .boostika-content .boostika-box p {
+  font-size: 19px;
+  font-weight: 700;
+}
+#boostika .boostika-content .boostika-box .user {
+  width: 200px;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+}
+#boostika .boostika-content .boostika-box .pattern {
+  opacity: 0.3;
+}
+
+/* PESA LINK STYLES */
+#pesalink-intro .container .inner-items {
+  display: grid;
+  grid-template-columns: 2fr 0.8fr;
+  grid-gap: 2.5em;
+}
+#pesalink-intro .container .inner-items .image-wrapper {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+#pesalink-intro .container .inner-items .image-wrapper img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: right center;
+     object-position: right center;
+  border-radius: 20px;
+}
+
+#pesalink .pesalink-actions {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+#pesalink .pesalink-actions .btn {
+  padding: 0.4rem 1.2rem;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  font-weight: 700 !important;
+}
+#pesalink .pesalink-actions .btn.primary {
+  background-color: var(--primary-accent-color);
+  color: white;
+}
+#pesalink .pesalink-actions .btn.outline {
+  border: 2px solid var(--primary-accent-color);
+  color: var(--primary-accent-color);
+  background: transparent;
+}
+#pesalink .pesalink-actions .btn:hover {
+  background-color: var(--primary-accent-color);
+  color: var(--background-color);
+}
+#pesalink .pesalink-steps {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+}
+#pesalink .pesalink-steps .list {
+  width: 50%;
+}
+#pesalink .pesalink-steps .loan-image {
+  width: 45%;
+  height: auto;
+  max-height: 210px;
+  border-radius: 12px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* MY GOALS STYLES */
+#my-goals-intro .container .inner-cards .card {
+  display: flex;
+  align-items: flex-end;
+  border-radius: 20px;
+  min-height: 400px;
+}
+#my-goals-intro .container .inner-cards .card .goal-icon {
+  z-index: 3;
+  top: 1em;
+  left: 1em;
+}
+#my-goals-intro .container .inner-cards .card .goal-image {
+  border-radius: 20px;
+}
+#my-goals-intro .container .inner-cards .card .content {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  z-index: 5;
+  color: var(--background-color);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  position: relative;
+  padding: 1.2em 1em;
+}
+#my-goals-intro .container .inner-cards .card .content .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  border-radius: 20px;
+  opacity: 0.7;
+}
+#my-goals-intro .container .inner-cards .card .content h3,
+#my-goals-intro .container .inner-cards .card .content p {
+  position: relative;
+  display: block;
+  z-index: 3 !important;
+}
+#my-goals-intro .container .inner-cards .card:nth-of-type(1) .content .overlay {
+  background-color: var(--primary-accent-color);
+}
+#my-goals-intro .container .inner-cards .card:nth-of-type(2) .content {
+  padding-bottom: 2.4em;
+}
+#my-goals-intro .container .inner-cards .card:nth-of-type(2) .content .overlay {
+  background-color: var(--foreground-color);
+}
+#my-goals-intro .container .inner-cards .card:nth-of-type(3) .content .overlay {
+  background-color: var(--secondary-accent-color);
+}
+
+/* JUBA EXPRESS PAGE STYLES */
+#juba-intro .container .inner .content {
+  width: 45%;
+}
+#juba-intro .container .inner img {
+  width: 48%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px;
+}/*# sourceMappingURL=style.css.map */

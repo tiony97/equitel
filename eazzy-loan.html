@@ -213,11 +213,11 @@
               <span class="right ml-2"></span>
             </h5>
             <h1 style="color: var(--foreground-color)">
-              <span>PWE</span> Real Time Transactions
+              Get up to <span>3 Million Instantly</span> on your Phone
             </h1>
             <p class="my-5">
-              Pay from Equitel, Equity Mobile App, Pesalink, *247#, Mpesa and
-              Airtel Money.
+              Get an Equitel line from any Equity Branch and enjoy Free Equitel
+              to Equitel money transfers.
             </p>
           </div>
 
@@ -231,7 +231,7 @@
             />
             <!--Banner Image-->
             <img
-              src="./assets/images/pay with equity banner.png"
+              src="./assets/images/eazzy loan banner.png"
               alt="Healthcare professional"
               class="main-image"
             />
@@ -239,158 +239,155 @@
         </div>
       </section>
 
-      <!--Intro-->
-      <section id="pay-intro" class="py-12">
+      <!-- Loans -->
+      <section id="loans" class="py-12">
         <div class="container">
-          <h2>Pay with Equity</h2>
+          <h2>Loans</h2>
           <p class="mt-6">
-            Pay with Equity (PWE) (previously known as EazzyPay) is the Bank’s
-            mobile acquiring platform that enables mobile subscribers to pay for
-            goods and services easily and conveniently to one merchant Till
-            Number for FREE.
+            Get a loan of up to KES 3 million instantly on your phone. No forms.
+            No Guarantors. You are eligible for an Eazzy Loan if you’ve had an
+            active Equity Bank account or active Equitel line for a minimum
+            period of 6 months. Access to credit is instant, saving you time and
+            is also private, safe and secure.
           </p>
-          <p class="mt-3 mb-3 lg:mt-4">
-            The interoperability feature of the PWE means that subscribers can
-            pay from Equitel, Equity Mobile App, Pesalink, *247#, Mpesa and
-            Airtel Money. Settlements for PWE transactions are real-time, and
-            merchants can access these funds immediately, offering more
-            convenience. Merchants are not charged any commissions when they
-            have the One Equity Till Number.
-          </p>
-          <span
-            class="tag text-lg font-bold italic"
-            style="color: var(--secondary-accent-color)"
-          >
-            As easy as...
-          </span>
-          <div
-            class="steps w-full lg:w-5/6 mx-auto flex flex-wrap items-center justify-between mt-6 lg:mt-8 space-y-4"
-          >
-            <div class="step flex flex-col justify-center items-center">
-              <h1
-                class="italic mb-3"
-                style="color: var(--primary-accent-color)"
-              >
-                01
-              </h1>
-              <p class="my-2">Go to Equitel</p>
-              <h5 class="italic font-bold capitalize">Menu</h5>
+
+          <h4 class="mt-4 italic">How To;</h4>
+
+          <!--Tab Btns-->
+          <div class="loan-actions mt-8">
+            <button
+              class="btn primary font-bold italic active"
+              data-tab="apply"
+            >
+              Apply
+            </button>
+            <button class="btn outline font-bold italic" data-tab="check-limit">
+              Check Loan Limit
+            </button>
+            <button
+              class="btn outline font-bold italic"
+              data-tab="make-payment"
+            >
+              Make a Payment
+            </button>
+          </div>
+
+          <div class="loan-steps" id="tab-apply">
+            <div
+              class="list flex flex-col lg:flex-row md:flex-row lg:justify-between md:justify-between items-start mt-6"
+            >
+              <div class="block space-y-3">
+                <p>1. Go to Equitel menu</p>
+                <p>2. Select My Money</p>
+                <p>3. Select Eazzy Loans</p>
+                <p>4. Select Get Loan</p>
+                <p>5. Select Account</p>
+              </div>
+              <div class="block space-y-3">
+                <p>6. Select Loan Type</p>
+                <p>7. Enter Amount</p>
+                <p>8. Confirm Details</p>
+                <p>9. Enter PIN</p>
+                <p>10. You will receive an SMS confirmation</p>
+              </div>
             </div>
-            <img src="./assets/images/Arrow 2.png" alt="arrow" class="arrow" />
-            <div class="step flex flex-col justify-center items-center">
-              <h1
-                class="italic mb-3"
-                style="color: var(--primary-accent-color)"
-              >
-                02
-              </h1>
-              <p class="my-2">Select</p>
-              <h5 class="italic font-bold capitalize">My Money</h5>
+            <img
+              src="./assets/images/eazzy loan intro.jpg"
+              alt="Happy user on phone"
+              class="loan-image"
+            />
+          </div>
+
+          <div class="loan-steps" id="tab-check-limit" style="display: none">
+            <div
+              class="list flex flex-col lg:flex-row md:flex-row lg:justify-between md:justify-between items-start mt-6"
+            >
+              <div class="block space-y-3">
+                <p>It's easy to find out how much money you can borrow.</p>
+                <p>1. Go to Equitel menu</p>
+                <p>2. Select My Money</p>
+                <p>3. Select Eazzy Loans</p>
+                <p>4. Select Loan Limit</p>
+              </div>
             </div>
-            <img src="./assets/images/Arrow 2.png" alt="arrow" class="arrow" />
-            <div class="step flex flex-col justify-center items-center">
-              <h1
-                class="italic mb-3"
-                style="color: var(--primary-accent-color)"
-              >
-                03
-              </h1>
-              <p class="my-2">Pay for</p>
-              <h5 class="italic font-bold capitalize">Goods & Services</h5>
+            <img
+              src="./assets/images/eazzy loan intro.jpg"
+              alt="Happy user on phone"
+              class="loan-image"
+            />
+          </div>
+
+          <div class="loan-steps" id="tab-make-payment" style="display: none">
+            <div
+              class="list flex flex-col lg:flex-row md:flex-row lg:justify-between md:justify-between items-start mt-6"
+            >
+              <div class="block space-y-3">
+                <p>1. Select My Money</p>
+                <p>2. Select Eazzy Loans</p>
+                <p>3. Select Pay Loan</p>
+                <p>4. Select Partial or Full Payment</p>
+                <p>5. Select Account</p>
+              </div>
+              <div class="block space-y-3">
+                <p>6. Enter Pin</p>
+                <p>7. Select Loan Type</p>
+                <p>8. Enter Amount</p>
+                <p>9. Confirm Details</p>
+                <p>10. You will receive an SMS confirmation</p>
+              </div>
             </div>
+            <img
+              src="./assets/images/eazzy loan intro.jpg"
+              alt="Happy user on phone"
+              class="loan-image"
+            />
           </div>
         </div>
       </section>
 
-      <!--Pay Tabs-->
-      <section id="pay-tabs" class="py-8 lg:py-12 md:py-10">
+      <!--Boostika-->
+      <section id="boostika" class="py-12">
         <div class="container">
-          <div class="tabbed-section">
-            <!-- Tab header with styled links -->
-            <div class="tab-header">
-              <span class="tab-link active" data-tab="business"
-                >Pay with Equity for Business</span
-              >
-              <span class="divider">|</span>
-              <span class="tab-link" data-tab="shoppers"
-                >Pay with Equity for Shoppers</span
-              >
+          <h2>Boostika</h2>
+          <div class="boostika-content mt-4">
+            <div class="boostika-box relative">
+              <p class="italic z-10">
+                Pesa hazitoshi ukilipa monthly bill?Simply accept the Boostika
+                prompt to complete your transaction via Equitel instantly &
+                conveniently.
+              </p>
+              <img
+                src="./assets/images/boostika.png"
+                alt="Boostika user"
+                class="user"
+              />
+              <img
+                src="./assets/images/white pattern.png"
+                alt="pattern"
+                class="pattern w-full h-full object-contain absolute top-0 left-0 z-0"
+              />
             </div>
-
-            <!-- Business tab content -->
-            <div class="tab-content active" id="business">
-              <div class="content">
-                <div class="text">
-                  <p class="mb-3">Benefits include:</p>
-                  <ul>
-                    <li>
-                      No touching of Cash more so in this season where hygiene
-                      is important.
-                    </li>
-                    <li>
-                      You can accept payments from customers from all mobile
-                      networks (Equitel, Equity Mobile App, Airtel, Mpesa and
-                      Pesalink)
-                    </li>
-                    <li>
-                      You are not charged any commission as it is free to
-                      Collect payments.
-                    </li>
-                    <li>
-                      When customers pay you it reflects instantly in your
-                      account i.e. Real Time Settlement.
-                    </li>
-                    <li>Collected money is available for immediate use.</li>
-                    <li>
-                      Equity provides pre-qualified credit based on the merchant
-                      business volume.
-                    </li>
-                    <li>
-                      Merchant can see the prequalified amount on our digital
-                      channels.
-                    </li>
-                    <li>Instant set-up/onboarding</li>
-                    <li>
-                      It provides an audit trail and ease of reconciliation.
-                    </li>
-                    <li>
-                      It is a neater display as you do not need many Till
-                      numbers stickers since it is interoperable.
-                    </li>
-                  </ul>
-                </div>
-                <div class="image">
-                  <img src="./assets/images/business.jpg" alt="Business User" />
-                </div>
-              </div>
-            </div>
-
-            <!-- Shoppers tab content -->
-            <div class="tab-content" id="shoppers">
-              <div class="content">
-                <div class="text">
-                  <p>Benefits include:</p>
-                  <ul>
-                    <li>
-                      Customers can enjoy fast & cashless payments where they do
-                      not need to touch cash.
-                    </li>
-                    <li>
-                      Customers can enjoy the interoperability as they can pay
-                      from whichever mobile network they belong to i.e
-                      Mpesa/Airtel Money/Equitel and bank accounts.
-                    </li>
-                    <li>
-                      Customers can enjoy the convenience of paying straight
-                      from their account hence no need to move money from their
-                      bank accounts to mobile wallets.
-                    </li>
-                  </ul>
-                </div>
-                <div class="image">
-                  <img src="./assets/images/shoppers.jpg" alt="Shopper User" />
-                </div>
-              </div>
+            <div class="boostika-info">
+              <p>
+                The Boostika option is embedded on the transaction journey when
+                one runs low on funds when making a payment, sending money or
+                buying airtime, therefore offering one the convenience of
+                completing a transaction seamlessly without exiting the payment
+                journey.
+              </p>
+              <p class="mt-1 mb-5">
+                Ease of access: You will simply receive a Boostika prompt
+                displaying your loan limit, and the deficit required to complete
+                the transaction.
+              </p>
+              <p>
+                One can Boostika as many times as possible, all you need is to
+                have a loan limit to complete the transaction. You only Boostika
+                what you require at that particular time, making it easy for you
+                to manage your finances. The Boostika amount of Kshs. 100 –
+                Kshs. 100,000 (based on your limit) is unsecured, with a
+                re-payment period of up to 30 days.
+              </p>
             </div>
           </div>
         </div>
@@ -399,7 +396,7 @@
       <!--CTA-->
       <section id="bottom-cta" class="relative py-6 lg:py-12 md:py-10 lg:pt-20">
         <img
-          src="./assets/images/pay with equity cta.jpg"
+          src="./assets/images/kq cta.jpg"
           alt="tariffs-bg"
           class="bg absolute top-0 left-0 w-full h-full object-cover"
           style="z-index: 0"

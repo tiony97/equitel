@@ -1,1 +1,12 @@
 /* KQ TICKETS STYLES */
+#kq-intro {
+  .container {
+    .final {
+      background-color: var(--primary-accent-color);
+      width: 200px;
+      height: 120px;
+      padding: 1.5em 1em;
+      border-radius: 20px;
+    }
+  }
+}

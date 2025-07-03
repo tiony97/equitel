@@ -1,0 +1,16 @@
+/* JUBA EXPRESS PAGE STYLES */
+#juba-intro {
+  .container {
+    .inner {
+      .content {
+        width: 45%;
+      }
+      img {
+        width: 48%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 20px;
+      }
+    }
+  }
+}

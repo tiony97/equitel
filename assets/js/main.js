@@ -72,3 +72,33 @@ $(function () {
     });
   });
 });
+
+/*Eazzy Loans Tabs */
+$(document).ready(function () {
+  $(".loan-actions .btn").on("click", function () {
+    // Handle button styles
+    $(".loan-actions .btn").removeClass("active primary").addClass("outline");
+    $(this).addClass("active primary").removeClass("outline");
+
+    // Handle tab content
+    const targetTab = "#tab-" + $(this).data("tab");
+    $(".loan-steps").hide(); // Hide all
+    $(targetTab).fadeIn(); // Show selected
+  });
+});
+
+/* PesaLinkchange */
+$(document).ready(function () {
+  $(".pesalink-actions .btn").on("click", function () {
+    // Update button styles
+    $(".pesalink-actions .btn")
+      .removeClass("active primary")
+      .addClass("outline");
+    $(this).addClass("active primary").removeClass("outline");
+
+    // Show the correct tab
+    const target = "#tab-" + $(this).data("tab");
+    $(".pesalink-steps").hide();
+    $(target).fadeIn();
+  });
+});

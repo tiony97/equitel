@@ -1,0 +1,79 @@
+/* EAZZY LOAN CSS STYLES */
+#loans {
+  .loan-actions {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+
+    .btn {
+      padding: 0.4rem 1.2rem;
+      border-radius: 999px;
+      border: none;
+      cursor: pointer;
+
+      &.primary {
+        background-color: var(--primary-accent-color);
+        color: white;
+      }
+
+      &.outline {
+        border: 2px solid var(--primary-accent-color);
+        color: var(--primary-accent-color);
+        background: transparent;
+      }
+    }
+  }
+
+  .loan-steps {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+
+    .list {
+      width: 50%;
+    }
+
+    .loan-image {
+      width: 45%;
+      height: auto;
+      max-height: 210px;
+      border-radius: 12px;
+      object-fit: cover;
+    }
+  }
+}
+
+#boostika {
+  .boostika-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 2em;
+
+    .boostika-box {
+      background-color: var(--secondary-accent-color);
+      color: white;
+      padding: 1rem;
+      border-radius: 1rem;
+      width: 100%;
+      max-height: 280px;
+      p {
+        font-size: 19px;
+        font-weight: 700;
+      }
+
+      .user {
+        width: 200px;
+        height: auto;
+        object-fit: contain;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: 2;
+      }
+      .pattern {
+        opacity: 0.3;
+      }
+    }
+  }
+}
